@@ -1,1 +1,1 @@
-# Yu-Gi-Ho
+# Yu-Gi-Oh
