@@ -86,6 +86,8 @@ async function setCardsField(cardId) {
     state.fieldCards.player.style.display = "block";
     state.fieldCards.computer.style.display = "block";
 
+    state.cardSprites
+
     state.fieldCards.player.src = cardData[cardId].img;
     state.fieldCards.computer.src = cardData[computerCardId].img;
 
@@ -166,8 +168,14 @@ async function playAudio(status){
 }
 
 function init() {
+    state.fieldCards.player.style.display = "none";
+    state.fieldCards.computer.style.display = "none";
+
     drawCards(5, state.playerSides.player1);
     drawCards(5, state.playerSides.computer);
+
+    const bgm = document.getElementById("bgm");
+    // bgm.play();
 }
 
 init();
